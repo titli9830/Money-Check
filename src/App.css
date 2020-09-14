@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Muli:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  /* height: 100vh; */
+  background: #3d656b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;  
+}
+
+.app-wrapper {
+  width: 90%;
+  max-width: 150%;
+  height: 82%;
+  background-color: rgb(44, 44, 45, 0.8); 
+  color: #eee;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  /* margin-left: 10%;
+  margin-top: 17%; */
+  padding: 10px;
+  margin: 10px;
+  flex-direction: row;
+  border-radius: 8px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.header h1 {
+  font-family: "Muli", serif;
+  font-size: 4.2vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #f46036;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.balance {
+  /* grid-column: 1 / 1;
+  grid-row: 3 / -1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.balance h2 {
+  font-family: "Baloo Da 2", serif;
+  font-size: 3vw;
+  font-weight: 300;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.balance h3 {
+  font-family: "Baloo Da 2", serif;
+  font-size: 2.5vw;
+  font-weight: 300;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  font-family: "Muli", serif;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  text-align: right;
+}
+
+.plus,
+.minus {
+  margin: 0 2rem;
+}
+
+.plus {
+  color: #77c987;
+}
+
+.minus {
+  color: #ff716e;
+}
+
+.income-expense h3 {
+  font-size: 2vw;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.income-expense p {
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-box1{
+  padding: 10px;
+}
+.app-box2{
+  padding: 10px;
+}
+.app-box21{
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  max-height: 90%;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+ /*.income {
+  padding-left: 17.5rem; 
+} */
+
+.expense {
+   padding-left: 17.5rem; 
+}
+
+.input-group input:not([type="submit"]) {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  border: none;
+  background: transparent;
+  border-bottom: 0.2rem solid #777;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.25vw;
+  color: #eee;
+  outline: none;
+  transition: border-bottom 0.4s;
+}
+
+.income input:not([type="submit"]):focus {
+  border-bottom: 0.2rem solid #77c987;
+}
+
+.expense input:not([type="submit"]):focus {
+  border-bottom: 0.2rem solid #ff716e;
+}
+
+.input-group input[type="submit"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  border-radius: 0.7rem;
+  font-family: "Muli", serif;
+  font-size: 1.25vw;
+  font-weight: 550;
+  letter-spacing: 0.1rem;
+  color: #eee;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 1rem;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.input-group input[type="submit"]:active {
+  transform: translateY(0.3rem);
+}
+
+.income input[type="submit"] {
+  background-color: #77c987;
+}
+
+.expense input[type="submit"] {
+  background-color: #ff716e;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.transactions {
+  margin-top: 32px;
+}
+
+.transactions h2 {
+  font-family: "Baloo da 2", serif;
+  font-size: 1.4vw;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+ .transactions-income {
+  width: 40%;
+} 
+
+.transactions-expense {
+   width: 40%;
+}
+
+.transaction-list {
+  /* width: 100%; */
+  height: 400px;
+  max-height: 35%;
+  overflow: auto;
+  
+}
+
+/* #########SCROLLBAR####### */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #aaa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444; 
+}
+
+/* #########SCROLLBAR---END####### */
+
+.transaction {
+  list-style: none;
+  font-family: "Baloo da 2", serif;
+  font-size: 1.1vw;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  padding: 0.4rem 0.4rem 0.4rem 0.7rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.abcd{
+  background-color: #5a9b67;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.efgh{
+  background-color: #cf5856;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* .transactions-income .transaction {
+   background-color: #5a9b67; 
+} */
+
+/* .transactions-expense .transaction {
+  background-color: #cf5856;
+} */
+
+.transaction-text {
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+ .transaction-amount {
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: end;
+   
+} 
+
+.delete-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1vw;
+  margin: 0 1rem;
+  color: #d4403e;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 375px) {
+  .app-box21 {
+   width: 90%;
+  }
+ }
+
+@media (max-width: 425px) {
+  html {
+    font-size: 30%;
+  }
+  
+  .parent {
+    
+   width: 80%;
+   flex-wrap: wrap;
+   justify-content: space-evenly; 
+   height: 80%;
+  }
+  
+  .app-box21{
+    width: 65vw;
+  }
+ }
+
+
+@media (min-width: 700px) {
+  .parent {
+   width: 90%;
+   flex-direction: row;
+   height: 90%;
+  }
+ }
+
+ 
+ @media (max-width: 1024px) {
+   
+   .parent {
+    width: 85%;
+    flex-direction: row;
+    height: 80%;
+   }
+   html {
+     font-size: 40%;
+   }
+ 
+   .app-box2{
+     flex-wrap: wrap;
+   }
+
+  }
+
+  @media (min-width: 1024px) {
+      .container {
+      height: 100vh;
+    }  
+  }
+  @media (min-width: 1350px){
+    .transaction-list {
+      height: 750px;
+    }
+     .container {
+      height: 110vh;
+    }  
+  }
+
+  
