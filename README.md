@@ -1,3 +1,13 @@
+## Project Screenshots
+
+### Mobile View:
+
+<img src="screenshots/Mobile.PNG" height="350">
+
+### Desktop View:
+
+<img src="screenshots/Desktop.PNG" width="400">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
